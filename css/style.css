@@ -1,0 +1,89 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    background: #000;
+    background-image:url('../assets/side-view-woman-experiencing-anxiety.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
+}
+header h1{
+    text-align: left;
+    font-size: 3em;
+}
+.contador{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: none;
+    pointer-events: none;
+}
+.cont_graficas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+.cont_graficas img{
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.cont_graficas img:hover{
+    transform: scale(1.01);
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 75%);
+    z-index: 100000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.closed{
+    font-family: 'Patua One', cursive;
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(169, 7, 7);
+    border-radius: 50%;
+}
+.cont_img_modal{
+    width: 90%;
+    max-width: 800px;
+}
+.cont_img_modal img{
+    width: 100%;    
+    object-fit: cover;
+}
